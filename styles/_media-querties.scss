@@ -1,0 +1,346 @@
+@media only screen and (min-width: 768px){
+    .content-nav{
+        .list{
+            text-align: center;
+        }
+    }
+    .hello-world {
+        text-align: -webkit-center;
+        .tittle-hello-world{
+            width: 20rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 500;
+            font-size: 3.1rem;
+        }
+    }
+    .container-episodios{
+        display: flex;
+        flex-direction: column;
+        .tittle-episodios{
+            font-size: 45px;
+            font-weight: 300;
+        }
+        .container-podcast{
+            width: 100%;
+            margin-top: 21px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe{
+                margin: 11px 11px 0 11px;
+                width: 25rem;
+            }
+        }
+    }
+    .container-de-donde-venimos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .tittle-de-donde-venimos{
+            font-size: 3.1rem;
+        }
+    }
+    .container-invitados{
+        height: 55rem;
+        .tittle-invitados{
+            font-size: 3.1rem;
+        }
+        .container-galery-invitados{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 1rem;
+        }
+    }
+    .container-temas{
+        align-items: center;
+        .tittle-temas{
+            font-size: 3.1rem;
+        }
+
+    }
+    .container-novedades{
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .content-nav{
+        display: flex;
+        flex-direction: row;
+        .toggler, .menu-hamburguer{
+            display: none;
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 1.625px 6.25rem;
+            list-style: none;
+            background-color:#FFFFFF;
+            width: 100%;
+            .li-nav{
+                color:$text-normal-color;
+                font-size: 1rem;
+                letter-spacing: 0;
+                line-height: 28px;
+            }
+            .li-nav:hover{
+                color: $text-link-hover;
+                text-decoration: line-through;
+                background-color: #FFFFFF;
+            }
+            .li-nav:active{
+                color:$text-link-active;
+                text-decoration: line-through;
+            }
+        }
+        img{
+            margin: 1.25rem;
+            margin-left: 6.25rem;
+        }
+    }
+    .hello-world{
+        text-align: -webkit-left;
+        margin-left: 12.5rem;
+        .tittle-hello-world{
+            width: 37rem;
+        }
+        .paragraph-hello-world{
+            width: 34rem;width: 34rem;
+        }
+        .container-conoce-mas{
+            width:14.125rem;
+        }
+        .container-conoce-mas:hover{
+            background: $button-hover-conoce-mas;
+        }
+    }
+    .container-episodios{
+        width: 100%;
+        height: 64rem;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        .tittle-episodios{
+            margin-top: 10rem;
+            margin-left: 12.5rem;
+        }
+        .container-podcast{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            iframe{
+            width: 400px;
+            height: 232px;
+            margin: 10px 16px 30px 64px;
+            }
+        }
+    }
+    .container-de-donde-venimos{
+        height: 26rem;
+        img{
+            transform: translate(-292px, -146px);
+        }
+        .tittle-de-donde-venimos{
+            transform: translate(194px, -525px);
+            width: 27rem;
+            font-size: 3rem;
+        }
+        .paragraph-de-donde-venimos{
+            transform: translate(230px, -525px);
+            width: 29rem;
+            height: 12.75rem;
+            font-size: 1rem;
+        }
+    }
+    .container-invitados{
+        height: 38.5rem;
+        .tittle-invitados{
+            font-size: 3.1rem;
+        }
+        .container-galery-invitados{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            row-gap: 0;
+            img{
+                width: 21.3333rem;
+                height: 15.75rem;
+            }
+        }
+    }
+    .container-temas{
+        height: 17rem;
+        .tittle-temas{
+            font-size: 3rem;
+            margin-bottom: 4.3125rem;
+        }
+        .container-icons{
+            display: flex;
+            .container-icon1, .container-icon2, .container-icon3, .container-icon4{
+                width: 16rem;
+            } 
+        }
+    }
+    .container-novedades{
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        .tittle-novedades{
+            width: 33rem;
+        }
+        .input-novedades:hover{
+            background: $button-hover-conoce-mas;
+        }
+    }
+    .footer{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .copyright{
+            margin: 24px 68px;
+        }
+        .container-icons-socials{
+            margin-right: 68px;
+        }
+    }
+}
+@media only screen and (min-width: 1440px){
+    .content-nav{
+        display: flex;
+        flex-direction: row;
+        .toggler, .menu-hamburguer{
+            display: none;
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 1.625px 6.25rem;
+            list-style: none;
+            background-color:#FFFFFF;
+            width: 100%;
+            .li-nav{
+                color:$text-normal-color;
+                font-size: 1rem;
+                letter-spacing: 0;
+                line-height: 28px;
+            }
+            .li-nav:hover{
+                color: $text-link-hover;
+                text-decoration: line-through;
+                background-color: #FFFFFF;
+            }
+            .li-nav:active{
+                color:$text-link-active;
+                text-decoration: line-through;
+            }
+        }
+        img{
+            margin: 1.25rem;
+            margin-left: 6.25rem;
+        }
+    }
+    .hello-world{
+        text-align: -webkit-left;
+        margin-left: 12.5rem;
+        .tittle-hello-world{
+            width: 37rem;
+        }
+        .paragraph-hello-world{
+            width: 34rem;width: 34rem;
+        }
+        .container-conoce-mas{
+            width:14.125rem;
+        }
+        .container-conoce-mas:hover{
+            background: $button-hover-conoce-mas;
+        }
+    }
+    .container-episodios{
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        width: 100%;
+        height: 64rem;
+        .tittle-episodios{
+            margin-top: 10rem;
+            margin-left: 12.5rem;
+        }
+        .container-podcast{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            iframe{
+                width: 584px;
+                height: 232px;
+                margin: 26px 50px 36px 55px;
+            }
+        }
+    }
+    .container-de-donde-venimos{
+        height: 26rem;
+        img{
+            transform: translate(-292px, -146px);
+        }
+        .tittle-de-donde-venimos{
+            transform: translate(194px, -525px);
+            width: 27rem;
+            font-size: 3rem;
+        }
+        .paragraph-de-donde-venimos{
+            transform: translate(230px, -525px);
+            width: 29rem;
+            height: 12.75rem;
+            font-size: 1rem;
+        }
+    }
+    .container-invitados{
+        height: 52.5rem;;
+        .tittle-invitados{
+            font-size: 3.1rem;
+        }
+        .container-galery-invitados{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            row-gap: 0;
+            img{
+                width: 30rem;
+                height: 22.75rem;
+            }
+        }
+    }
+    .container-temas{
+        height: 19rem;
+        .tittle-temas{
+            font-size: 3rem;
+            margin-bottom: 4.3125rem;
+        }
+        .container-icons{
+            display: flex;
+        }
+    }
+    .container-novedades{
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        .tittle-novedades{
+            width: 33rem;
+        }
+        .input-novedades:hover{
+            background: $button-hover-conoce-mas;
+        }
+    }
+    .footer{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .copyright{
+            margin: 24px 68px;
+        }
+        .container-icons-socials{
+            margin-right: 68px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.content-nav{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 36px;
+        height: 36px;
+        margin: 10px;
+    }
+    .toggler{
+        position: absolute;
+        border: 1px solid red;
+        cursor: pointer;
+        opacity: 0;
+        width: 20px;
+        height: 14px;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        margin-right: 17px;
+        margin-top: 12px;
+    }
+    .menu-hamburguer{
+        position: absolute;
+        width: 20px;
+        height: 14px;
+        top:0;
+        right: 0;
+        margin-right: 16px;
+        margin-top: 18px;
+    }
+    .menu-hamburguer > div{
+        position: relative;
+        width: 18px;
+        height: 2px;
+        background-color: $menu-lines-color;
+        z-index: 1;
+        transition: all 0.1s ease;
+    }
+    .menu-hamburguer > div::before,
+    .menu-hamburguer > div::after{
+        content: '';
+        position: absolute;
+        top: -5px;
+        z-index: 1;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+    .menu-hamburguer > div::after{
+        top:5px;
+    }
+    .toggler:checked + .menu-hamburguer > div{
+        transform: rotate(45deg);
+        background-color: $menu-x-color;
+    }
+    .toggler:checked + .menu-hamburguer > div::before,
+    .toggler:checked + .menu-hamburguer > div::after{
+        top: 0;
+        transform: rotate(90deg);
+        background-color: $menu-x-color;
+    }
+
+    .list{
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        background-color: $nav-mobile-extended-bg;
+        width: 100%;
+        .li-nav{
+            color: $nav-mobile-extended-color;
+            margin-left: 16px;
+            margin-bottom: 24px;
+            margin-top: 16px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+    }
+    input[type="checkbox"]:checked ~ .list {
+        display: flex;
+    }
+}
