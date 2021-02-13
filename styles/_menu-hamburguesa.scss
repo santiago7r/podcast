@@ -34,7 +34,7 @@
         height: 2px;
         background-color: $menu-lines-color;
         z-index: 1;
-        transition: all 4s ease;
+        transition: all 0.1s ease;
     }
     .menu-hamburguer > div::before,
     .menu-hamburguer > div::after{
@@ -67,14 +67,17 @@
         background-color: $nav-mobile-extended-bg;
         width: 100%;
         .li-nav{
-            color: $nav-mobile-extended-color;
             margin-left: 16px;
             margin-bottom: 24px;
             margin-top: 16px;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 16px;
-            letter-spacing: 0;
-            line-height: 28px;
+            a{
+                text-decoration: none;
+                color: $nav-mobile-extended-color;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 28px;
+            }
         }
     }
     input[type="checkbox"]:checked ~ .list {

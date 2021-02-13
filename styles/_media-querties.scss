@@ -81,19 +81,21 @@
             background-color:#FFFFFF;
             width: 100%;
             .li-nav{
-                color:$text-normal-color;
                 font-size: 1rem;
                 letter-spacing: 0;
                 line-height: 28px;
-            }
-            .li-nav:hover{
-                color: $text-link-hover;
-                text-decoration: line-through;
-                background-color: #FFFFFF;
-            }
-            .li-nav:active{
-                color:$text-link-active;
-                text-decoration: line-through;
+                a{
+                    color:$text-normal-color;
+                }
+                a:hover{
+                    color: $text-link-hover;
+                    text-decoration: line-through;
+                    background-color: #FFFFFF;
+                }
+                a:active{
+                    color:$text-link-active;
+                    text-decoration: line-through;
+                }
             }
         }
         img{
