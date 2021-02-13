@@ -34,7 +34,7 @@
         height: 2px;
         background-color: $menu-lines-color;
         z-index: 1;
-        transition: all 0.1s ease;
+        transition: all 4s ease;
     }
     .menu-hamburguer > div::before,
     .menu-hamburguer > div::after{

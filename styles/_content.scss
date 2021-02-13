@@ -8,8 +8,11 @@
         letter-spacing: 0;
         line-height: 42px;
         margin: 16px;
-        span{
+        .word-line-through{
             text-decoration: line-through;
+        }
+        .blue-point{
+            color: $nav-mobile-extended-bg;
         }
     }
     .paragraph-hello-world{
@@ -198,7 +201,7 @@
         line-height: 42px;
         margin: 4rem 1rem 0rem 1rem;
     }
-    input{
+    .input-novedades{
         width: 18rem;
         height:3rem;
         background: $text-link-hover;
@@ -210,6 +213,7 @@
         line-height: 22px;
         margin: 2rem 1rem 0rem 1rem;
         font-weight: 600;
+        border-width: 0;
     }
 }
 .footer{
