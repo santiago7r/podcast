@@ -220,7 +220,10 @@ body {
 
 .container-episodios .container-podcast iframe {
   margin: 11px 11px 0 11px;
-  width: 298px;
+  height: 225px;
+  width: 301px;
+  border: 0;
+  background-color: transparent;
 }
 
 .container-de-donde-venimos {
@@ -430,11 +433,15 @@ body {
   margin: 24px 0px;
 }
 
-.footer .fa {
+.footer .container-icons-socials a .fa {
   margin: 1rem 1rem;
+  color: #060A24;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 
-.footer .fa:hover {
+.footer .container-icons-socials a .fa:hover {
   -webkit-animation: shake 0.3s;
           animation: shake 0.3s;
 }

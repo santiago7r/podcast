@@ -74,7 +74,10 @@
         flex-direction: column;
         iframe{
             margin: 11px 11px 0 11px;
-            width: 298px;
+            height: 225px;
+            width: 301px;
+            border: 0;
+            background-color: transparent;
         }
     }
 }
@@ -233,23 +236,31 @@
         line-height: 22px;
         margin: 24px 0px;
     }
-    .fa{
-        margin: 1rem 1rem;
-    }
-    .fa:hover{
-        animation: shake 0.3s;
-    }
-    @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    .container-icons-socials{
+        a{
+            .fa{
+                margin: 1rem 1rem;
+                color: $text-normal-color;
+                font-size: 18px;
+                letter-spacing: 0;
+                line-height: 28px
+            }
+            .fa:hover{
+                animation: shake 0.3s;
+            }
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+        }
     }
 }
